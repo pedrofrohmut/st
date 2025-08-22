@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FiraMono Nerd Font:pixelsize=13:antialias=true:autohint=true";
+static char *font = "FiraMono Nerd Font:style=Regular:pixelsize=13:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -100,31 +100,31 @@ float alpha = 0.9;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* 8 normal colors */
-    "black",
-    "red3",
-    "green3",
-    "yellow3",
-    "blue2",
-    "magenta3",
-    "cyan3",
-    "gray90",
+    "#15161e", // "black",
+    "#f7768e", // "red3",
+    "#9ece6a", // "green3",
+    "#e0af68", // "yellow3",
+    "#7aa2f7", // "blue2",
+    "#bb9af7", // "magenta3",
+    "#7dcfff", // "cyan3",
+    "#a9b1d6", // "gray90",
 
     /* 8 bright colors */
-    "gray50",
-    "red",
-    "green",
-    "yellow",
-    "#5c5cff",
-    "magenta",
-    "cyan",
-    "white",
+    "#414868", // "gray50",
+    "#f7768e", // "red",
+    "#9ece6a", // "green",
+    "#e0af68", // "yellow",
+    "#7aa2f7", // "#5c5cff",
+    "#bb9af7", // "magenta",
+    "#7dcfff", // "cyan",
+    "#c0caf5", // "white",
 
     [255] = 0,
 
     /* more colors can be added after 255 to use with DefaultXX */
     "#cccccc",
     "#555555",
-    "gray90", /* default foreground colour */
+    "#c0caf5", /* default foreground colour */
     "#1a1b2c", /* default background colour */
 };
 
