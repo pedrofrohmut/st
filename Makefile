@@ -12,7 +12,8 @@ all: st
 config.h:
 	cp config.def.h config.h
 
-.c.o:
+#.c.o:
+%.o: %.c
 	$(CC) $(STCFLAGS) -c $<
 
 st.o: config.h st.h win.h
@@ -26,6 +27,7 @@ st: $(OBJ)
 clean:
 	rm -f st $(OBJ) st-$(VERSION).tar.gz
 
+# Makes the tar gz file to share
 dist: clean
 	mkdir -p st-$(VERSION)
 	cp -R FAQ LEGACY TODO LICENSE Makefile README config.mk\
